@@ -6,6 +6,10 @@ class DessertController {
     return await Dessert.all();
   }
 
+  async getById({ params }) {
+    return await Dessert.find(params.id)
+  }
+
   async store({ request }) {
     try {
       const dessert = new Dessert();
