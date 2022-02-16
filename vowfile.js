@@ -25,7 +25,7 @@ module.exports = (cli, runner) => {
     |
     */
     const host = "127.0.0.1";
-    const port = 5432;
+    const port = 3333;
     use("Adonis/Src/Server").listen(host, port);
 
     /*
