@@ -20,5 +20,5 @@ jobs:
           DATABASE_URL: postgres://alchemy:alchemy@postgres:5432/alchemy
           APP_KEY: ${{ secrets.APP_KEY }}
           HOST: 127.0.0.1
-          PORT: 3333
+          PORT: 5432
           ENV_SILENT: true
