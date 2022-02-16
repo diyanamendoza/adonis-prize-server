@@ -52,7 +52,7 @@ test("Test update a dessert", async ({ client }) => {
   response.assertJSONSubset({ name: "oreos", url: "oreos.png" });
 });
 
-test.skip("Test delete a dessert", async ({ client, assert }) => {
+test("Test delete a dessert", async ({ client, assert }) => {
   const dessert = await Dessert.findBy("name", "oreos");
   const toDelete = { name: "oreos", url: "oreos.png" };
   const response = await client.delete(`/desserts/${dessert.id}`).end();
