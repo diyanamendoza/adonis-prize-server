@@ -21,3 +21,4 @@ jobs:
           APP_KEY: ${{ secrets.APP_KEY }}
           HOST: 127.0.0.1
           PORT: 3333
+          ENV_SILENT: true
