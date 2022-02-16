@@ -22,8 +22,11 @@ Route.on("/").render("welcome");
 Route.get("/drinks", "DrinkController.index");
 Route.post("/drinks", "DrinkController.store");
 Route.get("/drinks/:id", "DrinkController.getById");
+Route.put("/drinks/:id", "DrinkController.update");
+
 
 //Dessert Routes
 Route.get("/desserts", "DessertController.index");
 Route.post("/desserts", "DessertController.store");
 Route.get("/desserts/:id", "DessertController.getById");
+Route.put("/desserts/:id", "DessertController.update");
