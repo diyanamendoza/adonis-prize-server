@@ -23,5 +23,8 @@ jobs:
           PORT: 3333
           ENV_SILENT: true
           DB_CONNECTION: pg
-          DB_HOST: 127.0.0.1
+          DB_HOST: postgres
           DB_PORT: 5432
+          DB_USER: alchemy
+          DB_PASSWORD: alchemy
+          DB_DATABASE: alchemy
