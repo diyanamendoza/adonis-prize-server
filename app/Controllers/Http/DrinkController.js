@@ -42,6 +42,18 @@ class DrinkController {
     }
   }
 
+  async destroy({ params }){
+    try {
+     const drink = await Drink.find(params.id)
+
+     await drink.delete();
+
+     return await Drink.all();
+  } catch (e) {
+    throw new Error(e.message)
+  }
+}
+
 }
 
 module.exports = DrinkController;

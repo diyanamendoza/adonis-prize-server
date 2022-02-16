@@ -43,6 +43,17 @@ class DessertController {
     }
   }
 
+  async destroy({ params }){
+    try {
+     const dessert = await Dessert.find(params.id)
+
+     await dessert.delete();
+
+     return await Dessert.all();
+  } catch (e) {
+    throw new Error(e.message)
+  }
+}
 
 }
 
