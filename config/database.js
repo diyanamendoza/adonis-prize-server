@@ -84,7 +84,7 @@ module.exports = {
   pg: {
     client: "pg",
     connection: {
-      host: Env.get("DB_HOST", "localhost"),
+      host: Env.get("DB_HOST", "postgres"),
       port: Env.get("DB_PORT", "5432"),
       user: Env.get("DB_USER", "alchemy"),
       password: Env.get("DB_PASSWORD", "alchemy"),
