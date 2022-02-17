@@ -17,6 +17,7 @@ jobs:
       - run: npm run migration
         env:
           ENV_SILENT: true
+          APP_KEY: ${{ secrets.APP_KEY }}
       - run: npm test
         env:
           CI: true
