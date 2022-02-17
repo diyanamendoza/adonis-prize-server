@@ -81,14 +81,25 @@ module.exports = {
   //     database: Env.get("DB_DATABASE", "adonis"),
   //   },
 
+  // pg: {
+  //   client: "pg",
+  //   connection: {
+  //     host: Env.get("DB_HOST", "postgres"),
+  //     port: Env.get("DB_PORT", "5432"),
+  //     user: Env.get("DB_USER", "alchemy"),
+  //     password: Env.get("DB_PASSWORD", "alchemy"),
+  //     database: Env.get("DB_DATABASE", "alchemy"),
+  //   },
+  // },
+
   pg: {
     client: "pg",
     connection: {
-      host: Env.get("DB_HOST", "postgres"),
-      port: Env.get("DB_PORT", "5432"),
-      user: Env.get("DB_USER", "alchemy"),
-      password: Env.get("DB_PASSWORD", "alchemy"),
-      database: Env.get("DB_DATABASE", "alchemy"),
+      host: "postgres",
+      port: "5432",
+      user: "alchemy",
+      password: "alchemy",
+      database: "alchemy",
     },
   },
 };
