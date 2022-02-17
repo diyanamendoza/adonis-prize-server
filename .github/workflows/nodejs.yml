@@ -21,15 +21,8 @@ jobs:
       - run: npm test
         env:
           CI: true
-          # DATABASE_URL: postgres://alchemy:alchemy@postgres:5432/alchemy
           APP_KEY: ${{ secrets.APP_KEY }}
           ENV_SILENT: true
           DB_CONNECTION: pg
-          # DB_HOST: postgres
-          # DB_PORT: 5432
-          # DB_USER: alchemy
-          # DB_PASSWORD: alchemy
-          # DB_DATABASE: alchemy
           POSTGRES_HOST: postgres
-          # The default PostgreSQL port
           POSTGRES_PORT: 5432
