@@ -1,0 +1,28 @@
+name: Vow Tests
+
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: node:latest
+    services:
+      postgres:
+        image: postgres
+        env:
+          POSTGRES_USER: alchemy
+          POSTGRES_PASSWORD: alchemy
+    steps:
+      - uses: actions/checkout@v2
+      - run: npm ci
+      - run: npm run migration
+        env:
+          ENV_SILENT: true
+          APP_KEY: ${{ secrets.APP_KEY }}
+      - run: npm test
+        env:
+          CI: true
+          APP_KEY: ${{ secrets.APP_KEY }}
+          ENV_SILENT: true
+          DB_CONNECTION: pg
+          POSTGRES_HOST: postgres
+          POSTGRES_PORT: 5432
