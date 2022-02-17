@@ -19,12 +19,10 @@ jobs:
           CI: true
           DATABASE_URL: postgres://alchemy:alchemy@postgres:5432/alchemy
           APP_KEY: ${{ secrets.APP_KEY }}
-          HOST: 127.0.0.1
-          PORT: 3333
-          ENV_SILENT: true
-          DB_CONNECTION: pg
-          DB_HOST: postgres
-          DB_PORT: 5432
-          DB_USER: alchemy
-          DB_PASSWORD: alchemy
-          DB_DATABASE: alchemy
+          # ENV_SILENT: true
+          # DB_CONNECTION: pg
+          # DB_HOST: postgres
+          # DB_PORT: 5432
+          # DB_USER: alchemy
+          # DB_PASSWORD: alchemy
+          # DB_DATABASE: alchemy
