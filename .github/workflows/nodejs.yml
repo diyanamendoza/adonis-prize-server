@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: npm ci
-      - run: adonis migration:run
+      - run: npm run migration
       - run: npm test
         env:
           CI: true
