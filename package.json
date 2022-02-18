@@ -4,6 +4,9 @@
   "adonis-version": "4.1.0",
   "description": "The fullstack application boilerplate for Adonisjs",
   "main": "index.js",
+  "engines": {
+    "node": "17.0.1"
+  },
   "scripts": {
     "test": "node ace test",
     "migration": "adonis migration:run",
