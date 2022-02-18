@@ -1,2 +1,2 @@
 # Learning Adonis
-A lab for implementing Adonis APIs.
+A lab for implementing a CRUD API with Adonis.
