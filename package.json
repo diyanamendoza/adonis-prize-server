@@ -5,11 +5,11 @@
   "description": "The fullstack application boilerplate for Adonisjs",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
     "test": "node ace test",
     "migration": "adonis migration:run",
-    "setup-db": "node -r dotenv/config setup-db.js",
-    "setup-heroku": "heroku run npm run setup-db"
+    "build": "node ace build --prod",
+    "start": "node ace serve --watch",
+    "start:prod": "node ./build/server.js"
   },
   "keywords": [
     "adonisjs",
